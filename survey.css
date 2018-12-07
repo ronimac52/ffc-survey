@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: white;
+  /*background-color: #f2f2f2;*/
+  background: url(https://images.pexels.com/photos/5876/food-salad-healthy-vegetables.jpg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940)
+}
+* {
+  box-sizing: border-box;
+}
+
+.container{
+  display: flexbox;
+  flex-direction: column;
+  box-align: center;
+  flex-align: flex-start;
+  justify-content: center;
+  max-width: 100vw;
+  min-height: 100vh;
+  justify-content: space-between;
+  ;
+  
+}
+#banner{
+background-color: #333;
+//max-width:70%;
+margin-left: 10em;
+margin-right: 10em;
+border-radius: 4px;
+
+}
+
+
+.outer-wrap {
+  margin: 10px;
+  padding: 5px;
+  border: solid;
+  border-color: black;
+  background-color: #333;// rgb(250, 250, 250);
+  margin: 0 auto;
+  border-radius: 4px;
+  //width: 55%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 60%;
+}
+
+#survey-form {
+  flex-direction: column;
+  justify-content: space-between;
+  border:solid;
+  border-color: red;
+  margin: 10px;
+  padding: 5px;
+  
+}
+.formRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border:solid;
+  border-color: green;
+  margin: 10px;
+  padding: 5px;
+}
+.formLeft {
+  border: solid;
+  border-color: blue;
+  margin: 1px;
+  width: 40%;
+}
+.formRight {
+  border: solid;
+  border-color: blue;
+  margin: 1px;width: 50%;
+  width: 40%;
+}
+/*.checkbox{
+justify-self: end;
+text-align: right;
+color: red;
+}
+.formRight > label {
+    justify-self: end;
+    text-align: right;
+}*/
+
+
+/*.dropdown {
+    padding-left: 6px;
+    outline: none;
+    border: none;
+    background-color: lightgrey;
+}*/

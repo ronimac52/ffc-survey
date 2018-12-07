@@ -1,0 +1,118 @@
+<html>
+<head>
+    <link href="survey.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+ <div id="banner">
+ <!--TODO - animate this banner-->
+  <h1 id="title">Restaurant Customer Experience</h1>
+  <p id="description">Please provide feedback using this form</p>
+ </div>
+  <div class="outer-wrap">
+    <form action="" id="survey-form">
+      <div class="formRow">
+
+        <div class="formLeft">
+          <label id="name-label" for="name">* Name: </label>
+        </div>
+        <div class="formRight">
+          <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+        </div>
+      </div>
+      <div class="formRow">
+
+        <div class="formLeft">
+          <label id="email-label" for="email">* Email: </label>
+        </div>
+        <div class="formRight">
+          <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email" >
+        </div>
+      </div>
+      <div class="formRow">
+
+        <div class="formLeft">
+          <label id="number-label" type="number" for="age">* Age: </label>
+        </div>
+        <div class="formRight">
+          <input autofocus type="text" name="age" id="number" min="1" max="100" class="input-field" placeholder="Enter your age" required>
+        </div>
+      </div>
+      <div class="formRow">
+          <div class="formLeft">
+              <label for="menu-option">Which menu did you choose from?
+              </label>
+          </div>
+          <div class="formRight">
+              <select id="dropdown" name="menu-option" class="dropdown">
+                  <option value="" disabled selected>Select a Menu</option>
+                  <option value="Chefs' Table">Chefs' Table</option>
+                  <option value="Prestige Menu">Prestige Menu</option>
+                  <option value="Prestige with Wine Pairing">Prestige with Wine Pairing</option>
+                  <option value="Vegetarian">Vegetarian</option>
+                  <option value="Sunday Lunch">Sunday Lunch</option>
+              </select>
+          </div>
+      </div>
+      <div class="formRow">
+        <div class="formLeft">
+          <label for="return-visit">* How likely are you to eat here again</label>
+        </div>
+        <div class="formRight">
+          <div>
+            <label>Very Likely<input name="radio-buttons" value="1"  type="radio" class="return-visit" ></label>
+          </div>
+          <div>
+            <label>Likely<input name="radio-buttons" value="2"  type="radio" class="return-visit" ></label>
+          </div>
+          <div>
+            <label>Not Likely<input name="radio-buttons" value="3"  type="radio" class="return-visit" ></label>
+          </div>
+        </div>
+      </div>
+      <div class="formRow">
+        <div class="formLeft">
+          <label for="how-many">* Do you have an allergy to any of these products?<br>
+            (Check all that apply)</label>
+        </div>
+        <div class="formRight">
+          <div>
+            <input type="checkbox" id="nuts" value="nuts" >
+            <label class="checkbox" for="nuts">Nuts</label>
+          </div>
+          <div>
+            <input type="checkbox" id="dairy" value="dairy" class="checkbox">
+            <label class="checkbox" for="dairy">Dairy</label>
+          </div>
+          <div>
+            <input type="checkbox" id="gluten" value="gluten" class="checkbox">
+            <label class="checkbox" for="gluten">Gluten</label>
+          </div>
+          <div>
+            <input type="checkbox" id="fish" value="fish" class="checkbox">
+            <label class="checkbox" for="fish">Fish/Shellfish</label>
+          </div>
+        </div>
+      </div>
+        <div class="formRow">
+          <div class="formLeft">
+          <label for="feedback"><em>Any other comments?</em></label>
+        </div>
+        <div class="formRight">
+        <textarea class="input" id="feedback" placeholder="Enter your comments here"></textarea>
+      </div>
+    </div>
+      <div>
+        <button type="submit" id="submit">Submit</button>
+      </div>
+      <!--<div class="formRow">
+        <div class="formLeft">
+        </div>
+        <div class="formRight">
+        </div>
+      </div> -->
+    </form>
+  </div>
+</div>
+</body>
+</html>
