@@ -59,14 +59,17 @@
           <label for="return-visit">* How likely are you to eat here again</label>
         </div>
         <div class="formRight">
-          <div>
-            <label>Very Likely<input name="radio-buttons" value="1"  type="radio" class="return-visit" ></label>
+          <div  class="checkboxlabel">
+            <input name="radio-buttons" value="1"  type="radio">
+            <label>Very Likely</label>
           </div>
-          <div>
-            <label>Likely<input name="radio-buttons" value="2"  type="radio" class="return-visit" ></label>
+          <div class="checkboxlabel">
+            <input name="radio-buttons" value="2"  type="radio">
+            <label>Likely</label>
           </div>
-          <div>
-            <label>Not Likely<input name="radio-buttons" value="3"  type="radio" class="return-visit" ></label>
+          <div class="checkboxlabel" >
+            <input name="radio-buttons" value="3"  type="radio">
+            <label>Not Likely</label>
           </div>
         </div>
       </div>
@@ -76,30 +79,30 @@
             (Check all that apply)</label>
         </div>
         <div class="formRight">
-          <div>
-            <input type="checkbox" id="nuts" value="nuts" >
+          <div class="checkboxlabel">
+            <input type="checkbox" id="nuts" value="nuts">
             <label class="checkbox" for="nuts">Nuts</label>
           </div>
-          <div>
-            <input type="checkbox" id="dairy" value="dairy" class="checkbox">
+          <div class="checkboxlabel">
+            <input type="checkbox" id="dairy" value="dairy">
             <label class="checkbox" for="dairy">Dairy</label>
           </div>
-          <div>
-            <input type="checkbox" id="gluten" value="gluten" class="checkbox">
+          <div class="checkboxlabel">
+            <input type="checkbox" id="gluten" value="gluten">
             <label class="checkbox" for="gluten">Gluten</label>
           </div>
-          <div>
-            <input type="checkbox" id="fish" value="fish" class="checkbox">
+          <div class="checkboxlabel">
+            <input type="checkbox" id="fish" value="fish">
             <label class="checkbox" for="fish">Fish/Shellfish</label>
           </div>
         </div>
       </div>
-        <div class="formRow">
-          <div class="formLeft">
+      <div class="formRow">
+        <div class="formLeft">
           <label for="feedback"><em>Any other comments?</em></label>
         </div>
-        <div class="formRight">
-        <textarea class="input" id="feedback" placeholder="Enter your comments here"></textarea>
+        <div class="textRight">
+          <textarea class="input" id="feedback" placeholder="Enter your comments here"></textarea>
       </div>
     </div>
       <div>

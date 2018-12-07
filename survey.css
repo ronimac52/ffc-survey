@@ -50,8 +50,8 @@ border-radius: 4px;
 #survey-form {
   flex-direction: column;
   justify-content: space-between;
-  border:solid;
-  border-color: red;
+  //border:solid;
+  //border-color: red;
   margin: 10px;
   padding: 5px;
   
@@ -60,37 +60,49 @@ border-radius: 4px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border:solid;
-  border-color: green;
+  border-bottom: 1px solid green;
+  //border-color: green;
   margin: 10px;
   padding: 5px;
 }
 .formLeft {
-  border: solid;
-  border-color: blue;
+  //border: solid;
+  //border-color: blue;
   margin: 1px;
   width: 40%;
 }
 .formRight {
-  border: solid;
-  border-color: blue;
+  //border: solid;
+  //border-color: blue;
   margin: 1px;width: 50%;
   width: 40%;
 }
-/*.checkbox{
-justify-self: end;
-text-align: right;
-color: red;
-}
-.formRight > label {
-    justify-self: end;
-    text-align: right;
-}*/
+.return-visit {
+    vertical-align: middle;
+    text-align:justify;
+    padding-left: 30%;
+    }
 
 
-/*.dropdown {
-    padding-left: 6px;
-    outline: none;
-    border: none;
-    background-color: lightgrey;
-}*/
+.checkboxlabel{
+width: 100%;
+    vertical-align: middle;
+    text-align:justify;
+    padding-left: 30%;
+    }
+    
+.textRight {
+  //border: solid;
+  //border-color: red;
+  margin: 1px;
+  width: 80%;
+  padding: 1px;
+}    
+   
+    
+#feedback {
+width: 80%;
+margin: 1em;
+padding: 1em;
+}  
+    
