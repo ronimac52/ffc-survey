@@ -31,6 +31,11 @@ border-radius: 4px;
 
 }
 
+#description {
+padding-bottom: 0.5em;
+//border: solid;
+//border-color: white;
+}
 
 .outer-wrap {
   margin: 10px;
