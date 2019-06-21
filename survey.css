@@ -1,3 +1,7 @@
+/*html {
+  font-size: calc(1em + 1vw)
+}*/
+
 body {
   margin: 0;
   padding: 0;
@@ -5,9 +9,6 @@ body {
   color: white;
   /*background-color: #f2f2f2;*/
   background: url(https://images.pexels.com/photos/5876/food-salad-healthy-vegetables.jpg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940)
-}
-* {
-  box-sizing: border-box;
 }
 
 .container{
@@ -19,10 +20,9 @@ body {
   max-width: 100vw;
   min-height: 100vh;
   justify-content: space-between;
-  ;
-  
+
 }
-#banner{
+.banner{
 	position: -webkit-sticky;
    position: sticky;
    top: 0;
@@ -62,7 +62,7 @@ padding-bottom: 0.5em;
   //border-color: red;
   margin: 10px;
   padding: 5px;
-  
+
 }
 .formRow {
   display: flex;
@@ -98,19 +98,98 @@ width: 100%;
     text-align:justify;
     padding-left: 30%;
     }
-    
+
 .textRight {
   //border: solid;
   //border-color: red;
   margin: 1px;
   width: 80%;
   padding: 1px;
-}    
-   
-    
+}
+
+
 #feedback {
 width: 80%;
 margin: 1em;
 padding: 1em;
-}  
-    
+}
+@media (max-width: 800px) {
+  .formRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-bottom: 1px solid green;
+    //border-color: green;
+    margin: 5px;
+    padding: 2px;
+    text-align:left;
+  }
+
+  .formLeft {
+    display:flex;
+  flex-direction: row;
+  text-align:left;
+  margin: 0;
+  padding: 0;
+  }
+
+  .formRight .input-field{
+    width: 250%;
+  }
+
+  .banner {
+    position: static;
+}
+}
+@media (max-width: 780px) {
+  .formRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-bottom: 1px solid green;
+    //border-color: green;
+    margin: 5px;
+    padding: 2px;
+    text-align:left;
+  }
+
+  #title {
+    word-wrap: break-word
+  }
+  #description {
+    word-wrap: break-word
+  }
+
+  .formLeft {
+    display:flex;
+  flex-direction: row;
+  text-align:left;
+  margin: 0;
+  padding: 0;
+  font-size:4vw;
+  }
+
+  .formRight .input-field{
+    width: 250%;
+  }
+
+  .formRight .dropdown {
+    width: 250%;
+    padding-right: 2em;
+  }
+
+  .checkboxlabel {
+    font-size:3vw;
+  }
+
+  .outer-wrap {
+    width:auto;
+  }
+
+  .banner {
+    position: static;
+    width: auto;
+    height:auto;
+    font-size: 60%;
+}
+}

@@ -4,7 +4,7 @@
 </head>
 <body>
 <div class="container">
- <div id="banner">
+ <div class="banner">
  <!--TODO - animate this banner-->
   <h1 id="title">Restaurant Customer Experience</h1>
   <p id="description">Please provide feedback using this form</p>
@@ -32,16 +32,15 @@
       <div class="formRow">
 
         <div class="formLeft">
-          <label id="number-label" type="number" for="age">* Age: </label>
+          <label id="number-label" type="number" for="age">Age: </label>
         </div>
         <div class="formRight">
-          <input autofocus type="text" name="age" id="number" min="1" max="100" class="input-field" placeholder="Enter your age" required>
+          <input type="number" name="age" id="number" min="1" max="100" class="input-field" placeholder="Enter your age" required>
         </div>
       </div>
       <div class="formRow">
           <div class="formLeft">
-              <label for="menu-option">Which menu did you choose from?
-              </label>
+              <label for="menu-option">Your Menu?</label>
           </div>
           <div class="formRight">
               <select id="dropdown" name="menu-option" class="dropdown">
@@ -56,7 +55,7 @@
       </div>
       <div class="formRow">
         <div class="formLeft">
-          <label for="return-visit">* How likely are you to dine here again?</label>
+          <label for="return-visit">How likely are you to dine here again?</label>
         </div>
         <div class="formRight">
           <div  class="checkboxlabel">
